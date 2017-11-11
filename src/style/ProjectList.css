@@ -1,0 +1,49 @@
+.ProjectList {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  width: 28%;
+  height: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projectTitle {
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s linear;
+}
+
+.projectItem:hover > .projectTitle {
+  opacity: 0;
+}
+
+.projectDescription,
+.projectLinks {
+  opacity: 0;
+  transition: opacity 1s linear;
+  margin: auto;
+}
+
+.projectItem:hover > .projectDescription,
+.projectItem:hover > .projectLinks {
+  opacity: 1;
+}
+
+.projectLinks > div {
+  text-decoration: none;
+  padding: 5px 0;
+}

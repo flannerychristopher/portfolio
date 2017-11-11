@@ -29,7 +29,7 @@ const projects = [
     }
   },
   {
-    title: 'YouTube Pomdoro Clock',
+    title: 'YouTube Pomodoro Clock',
     description: 'I regularly use a the Pomodoro Technique and decided to combine two popular React projects, creating a timer and and accessing the YouTube API, to create a Pomodoro timer. Set the period of time, search for an artist, and the returned playlist will loop as long as the timer runs.',
     repo: 'https://github.com/flanthedev/youtube_pomodoro',
     hosting: {
