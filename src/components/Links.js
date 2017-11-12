@@ -1,7 +1,7 @@
 import React from 'react';
-import links from '../data/externallinks';
+import links from '../data/links';
 
-const ExternalLinks = () => {
+const Links = () => {
   return (
     <div className="externalLinks">
       {
@@ -22,4 +22,4 @@ const ExternalLinks = () => {
   );
 }
 
-export default ExternalLinks;
+export default Links;

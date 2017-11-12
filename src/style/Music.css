@@ -1,0 +1,9 @@
+.musicItem {
+  display: inline;
+  margin: 15px;
+}
+
+.musicItem > iframe {
+  width: 80%;
+  margin-bottom: 30px;
+}
