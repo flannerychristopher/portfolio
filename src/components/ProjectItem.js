@@ -1,5 +1,4 @@
 import React from 'react';
-import { GITHUB } from '../constants/constants';
 
 import ProjectIcons from './ProjectIcons';
 
@@ -15,11 +14,16 @@ const ProjectItem = ({ project }) => {
       <div className="projectDescription">{project.description}</div>
       <div className="projectLinks">
         <div>
-          <a href={project.repo} target="_blank">the code on GitHub</a>
+          <a href={project.repo} target="_blank">
+            {project.repo.length ? 'the code on GitHub' : null}
+          </a>
         </div>
         <div>
-          <a href={project.hosting.url} target="_blank">
-            hosted on {project.hosting.host === GITHUB ? 'GitHub' : 'Heroku'}
+          <a href={project.hosting} target="_blank">
+            {project.hosting.includes('github') ? 'hosted on GitHub' : null}
+            {project.hosting.includes('heroku') ? 'hosted on Heroku' : null}
+            {project.hosting.includes('codeacademy') ? 'see my CodeAcademy profile' : null}
+            {project.hosting.includes('udemy') ? 'see my Udemy profile' : null}
           </a>
         </div>
       </div>

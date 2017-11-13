@@ -6,29 +6,40 @@
 }
 
 .App-header {
-  height: 120px;
   position: relative;
-  padding: 20px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 5px;
+  height: 100px;
+}
+
+@media screen and (min-width: 620px) {
+  .App-header {
+    padding: 5px;
+  }
 }
 
 /* EXTERNAL LINKS */
 
 .externalLinks {
-  position: absolute;
-  right: 0;
-  top: 5px;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
 }
 
-.externalLinks > a {
-  margin: 0 20px;
+@media screen and (min-width: 620px) {
+  .externalLinks {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  .externalLinks > a {
+    margin: 0 10px;
+  }
 }
 
 .externalLinks > a > img {
-  width: 35px;
+  width: 25px;
   transition: opacity .5s linear;
 }
 
@@ -39,5 +50,49 @@
 /* NAVIGATION */
 
 .navigation {
-  margin: 0 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+.navigation a span {
+  display: none;
+  transition: color .5s linear;
+}
+
+.navigation a:hover span {
+  color: #ff5500;
+}
+
+.navigation img {
+  width: 35px;
+  transition: opacity .5s linear;
+  /* vertical-align: middle; */
+}
+
+.navigation a:hover img {
+  opacity: .3;
+}
+
+@media screen and (min-width: 620px) {
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+  }
+
+  .navigation img {
+    width: 18px;
+  }
+
+  .navigation a span {
+    display: inline;
+    margin-right: 10px;
+    line-height: 35px;
+  }
 }

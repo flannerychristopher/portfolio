@@ -1,0 +1,139 @@
+/* ------------------------- NAVIGATION */
+
+.projectNav div {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 10px;
+  transition: color .5s linear;
+}
+
+@media screen and (min-width: 620px) {
+  .projectNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .projectNav {
+    width: 60%;
+  }
+}
+
+.projectNav div:hover {
+  color: #ff5500;
+}
+
+.activeNavItem {
+  background: #ff5500;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+
+/* ------------------------- LIST */
+
+.projectList {
+  box-sizing: border-box;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 15px;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 15px;
+  border: 1px solid #ff5500;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:620px) {
+  .projectItem {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .projectItem {
+    width: 30%;
+  }
+}
+
+.projectItem {
+  transition: background 1s linear;
+}
+
+.projectItem:hover {
+  background: #707070;
+}
+
+.projectTitle {
+  position: absolute;
+  font-size: 25px;
+  width: 80%;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: opacity 1s linear;
+}
+
+.projectItem:hover > .projectTitle,
+.projectItem:active > .projectTitle {
+  opacity: 0;
+}
+
+.projectDescription {
+  color: #fff;
+  font-size: 1.1em;
+  opacity: 0;
+  margin: auto;
+  padding: 20px;
+  transition: opacity 1s linear;
+}
+
+.projectItem:hover > .projectDescription,
+.projectItem:hover > .projectLinks,
+.projectItem:active > .projectDescription,
+.projectItem:active > .projectLinks {
+  opacity: 1;
+}
+
+.projectLinks div {
+  padding: 10px 0;
+}
+
+.projectLinks div a {
+  transition: color .5s linear;
+  font-size: 14px;
+}
+
+.projectLinks div:hover a {
+  color: #ff5500;
+}
+
+.ProjectIcon {
+  width: 35px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.backToTop {
+  color: #fff;
+  background: #ff5500;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  margin: 15px 0;
+  cursor: pointer;
+}

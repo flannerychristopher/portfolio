@@ -1,3 +1,3 @@
 portfolio page
 
-<a href="https://flanthedev.github.io/portfolio/" target="_blank">view on GitHub Pages</a>
+<a href="http://www.flan.website/" target="_blank">view on www.flan.website/</a>
