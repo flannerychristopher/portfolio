@@ -28,7 +28,7 @@ const projects = [
   {
     title: 'Connect Four',
     description: 'This game is written in JavaScript and tested in Jasmine. I am most proud of the method to check for a win or draw in this game. Connect Four is a complex game with millions of possible board combinations. Each time a player completes a turn, the program calculates all the possible winning scenarios that the turn could compete, then checks if the player holds those coordinates.',
-    repo: 'I am most proud of the method to check for a win or draw in this game. Connect Four is a complex game with millions of possible board combinations. Each time a player completes a turn, the program calculates all the possible winning scenarios that the turn could compete, then checks if the player holds those coordinates.',
+    repo: 'https://github.com/flanthedev/connect_four',
     languages: [selected, js, jasmine],
     hosting: 'https://flanthedev.github.io/connect_four/'
   },
@@ -51,7 +51,7 @@ const projects = [
   {
     title: 'White Noise Machine',
     description: 'A white noise machine to help me rest after all that programming. Select a sound and the app will continually loop the audio.',
-    repo: 'A white noise machine to help me rest after all that programming',
+    repo: 'https://github.com/flanthedev/white_noise',
     languages: [react, babel, webpack],
     hosting: 'https://flanthedev.github.io/white_noise'
 
@@ -151,7 +151,7 @@ const projects = [
   {
     title: 'The Odin Project',
     description: 'an open-source full-stack development course',
-    repo: 'https://github.com/flanthedev/the_odin_project/commits/master',
+    repo: 'https://github.com/flanthedev/the_odin_project',
     languages: [tutorial],
     hosting: ''
   },
