@@ -18,6 +18,35 @@
   }
 }
 
+/* FLAN ICON AND TEXT*/
+
+.flanIcon {
+  position: absolute;
+  opacity: .2;
+  left:0;
+  top: 5px;
+  z-index: -5;
+}
+
+.flanText {
+  font-family: 'Bungee', sans-serif;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 62px;
+  color: #ff5500;
+  z-index: -5;
+}
+
+@media screen and (min-width: 620px) {
+  .flanIcon {
+    opacity: 1;
+  }
+  .flanText {
+    display: block;
+  }
+}
+
 /* EXTERNAL LINKS */
 
 .externalLinks {
@@ -39,7 +68,7 @@
 }
 
 .externalLinks > a > img {
-  width: 25px;
+  width: 24px;
   transition: opacity .5s linear;
 }
 
@@ -60,6 +89,7 @@
 .navigation a span {
   display: none;
   transition: color .5s linear;
+  font-family: 'Bungee', sans-serif;
 }
 
 .navigation a:hover span {
@@ -69,7 +99,6 @@
 .navigation img {
   width: 35px;
   transition: opacity .5s linear;
-  /* vertical-align: middle; */
 }
 
 .navigation a:hover img {

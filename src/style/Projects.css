@@ -27,6 +27,10 @@
   color: #ff5500;
 }
 
+.projectNav div {
+  font-family: 'Bungee', sans-serif;
+}
+
 .activeNavItem {
   background: #ff5500;
   color: #fff;
@@ -34,6 +38,9 @@
   padding: 10px;
 }
 
+.projectNav .activeNavItem:hover {
+  color: #000000;
+}
 
 /* ------------------------- LIST */
 
@@ -72,6 +79,8 @@
 
 .projectItem {
   transition: background 1s linear;
+  min-height: 300px;
+  background: #fff;
 }
 
 .projectItem:hover {
@@ -79,6 +88,8 @@
 }
 
 .projectTitle {
+  font-family: 'Bungee', sans-serif;
+  color: #ff5500;
   position: absolute;
   font-size: 25px;
   width: 80%;
@@ -94,8 +105,10 @@
 }
 
 .projectDescription {
+  text-align: justify;
+  line-height: 1.5em;
   color: #fff;
-  font-size: 1.1em;
+  font-size: .9em;
   opacity: 0;
   margin: auto;
   padding: 20px;
@@ -109,13 +122,21 @@
   opacity: 1;
 }
 
+/* PROJECT LINKS */
+
+.projectLinks {
+  height: 25%;
+}
+
 .projectLinks div {
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
 .projectLinks div a {
   transition: color .5s linear;
-  font-size: 14px;
+  color: #ff5500;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .projectLinks div:hover a {
@@ -126,14 +147,4 @@
   width: 35px;
   display: inline-block;
   margin: 10px;
-}
-
-.backToTop {
-  color: #fff;
-  background: #ff5500;
-  width: 100%;
-  height: 30px;
-  border-radius: 15px;
-  margin: 15px 0;
-  cursor: pointer;
 }

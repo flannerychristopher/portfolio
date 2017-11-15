@@ -4,6 +4,13 @@
 }
 
 .musicItem > iframe {
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 620px) {
+  .musicItem > iframe {
+    width: 80%;
+  }
 }

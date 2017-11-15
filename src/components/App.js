@@ -7,6 +7,7 @@ import {
 import '../style/App.css';
 import code from '../images/code.png';
 import music from '../images/music.png';
+import flan from '../images/flan.png';
 
 import Links from './Links';
 import Music from './Music';
@@ -19,6 +20,8 @@ class App extends Component {
         <div className="App">
 
           <header className="App-header">
+            <img src={flan} alt='flan' className='flanIcon' />
+            <span className='flanText'>flan the dev</span>
             <Links />
             <div className="navigation">
               <Link to="/">

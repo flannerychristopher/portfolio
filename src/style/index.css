@@ -19,16 +19,16 @@
 }
 
 body {
-  background: #bebebe;
+  background: #f3f3f3;
   font-family: 'Lato-Regular', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 24px;
 }
 
 .navigation a span {
-  font-family: 'Bungee', sans-serif;
+  /* font-family: 'Bungee', sans-serif; */
 }

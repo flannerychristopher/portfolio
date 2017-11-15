@@ -15,15 +15,23 @@ const ProjectItem = ({ project }) => {
       <div className="projectLinks">
         <div>
           <a href={project.repo} target="_blank">
-            {project.repo.length ? 'the code on GitHub' : null}
+            {project.repo.length ? 'view the code' : ''}
           </a>
+
         </div>
+
         <div>
           <a href={project.hosting} target="_blank">
-            {project.hosting.includes('github') ? 'hosted on GitHub' : null}
-            {project.hosting.includes('heroku') ? 'hosted on Heroku' : null}
-            {project.hosting.includes('codeacademy') ? 'see my CodeAcademy profile' : null}
-            {project.hosting.includes('udemy') ? 'see my Udemy profile' : null}
+            {
+              project.hosting.includes('github') || project.hosting.includes('heroku')
+                ? 'view the live demo'
+                : null
+            }
+            {
+              project.hosting.includes('codeacademy') || project.hosting.includes('udemy')
+                ? 'see my profile'
+                : null
+            }
           </a>
         </div>
       </div>
