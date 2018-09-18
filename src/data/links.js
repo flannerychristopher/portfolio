@@ -13,11 +13,6 @@ const links = [
     title: 'linkedin',
     url: 'https://www.linkedin.com/in/chris-flan',
     img: linkedin
-  },
-  {
-    title: 'wordpress',
-    url: 'https://flanthedev.wordpress.com/',
-    img: wordpress
   }
 ];
 
