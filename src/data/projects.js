@@ -19,6 +19,13 @@ import webpack from '../images/webpack.svg';
 
 const projects = [
   {
+    title: 'Rails Tenant Starter',
+    description: 'A project template to jump into a multi-tenancy app with Devise, Pundit, React-Rails, and Webpack. I started laying the groundwork for another project and realized it could be beneficial to create a template like this one.',
+    repo: 'https://github.com/flanthedev/rails_tenant_starter/',
+    languages: [selected, ruby, rails, heroku, webpack],
+    hosting: ''
+  },
+  {
     title: 'BLLTN',
     description: 'A social media application that combines groups with one of the latest trend in social media; shared information that expires after a day. I was inspired to create this by my experience checking my email after a few days off from work. More than half the emails were time-sensitive. It’s nothing revolutionary, but combines some popular features of major social networking apps.',
     repo: 'https://github.com/flanthedev/blltn',
